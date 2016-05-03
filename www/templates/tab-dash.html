@@ -1,0 +1,12 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <h4>Logged in as {{authData.facebook.displayName}}</h4>
+    <img src="{{authData.facebook.profileImageURL}}" alt="Profilepicture" />
+    <button ng-click="logout(authData)">Log out</button>
+    <hr>
+    <h4>Userlist</h4>
+    <ul ng-repeat="user in users">
+      <li>{{user.username}}</li>
+    </ul>
+  </ion-content>
+</ion-view>
